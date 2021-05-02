@@ -1,38 +1,101 @@
 .App {
   text-align: center;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  height: auto;
+  box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+  background-color: rgb(233, 233, 233);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#inputId{
+  width: 60%;
+  height: 40px;
+  background-color: var(--white);
+  border: none;
+  box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#inputId:focus{
+  outline: none;
+}
+#main{
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+}
+#searchbtn{
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  margin: 0px 10px;
+  box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  background-color: var(--white);
 }
 
-.App-link {
-  color: #61dafb;
+#details{
+  /* height: 100vh; */
+  flex: 1;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  /* background-color: #fff; */
+}
+#cityName{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#temp{
+  font-size: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#icon{
+  width: 80px;
+  height: 80px;
+}
+
+/* #left{
+  margin-top: 30px;
+  flex: 1;
+}*/
+#left p{
+  padding: 25px;
+  font-size: 20px;
+  border-bottom: 1px dotted black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.err{
+  font-size:20px;
+
+}
+/*
+#right{
+  margin-top: 30px;
+  flex: 1;
+} */
+
+.footer{
+  height: 40px;
+  width: 75%;
+  margin: auto;
+  box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.1);
+}
+.footer p{
+  margin-top: -12px;
+}
+
+@media screen and (max-width: 680px) {
+  #main {
+    display: inline-block;
   }
-  to {
-    transform: rotate(360deg);
+  #details{
+    order: 3;
   }
 }
